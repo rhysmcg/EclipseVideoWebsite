@@ -119,8 +119,8 @@ tr.tooltiprow td:first-child, tr.tooltiprow td, tr.tooltiprow th {
 
 <br>
 <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 0.1fr 0.1fr; gap: 15px 15px;">
-<div><img src="images/sim_tot_web.png"></div>
-<div><img src="images/sim_tot_web.png"></div>
+<div><img src="images/placeholder.png" width='100%'></div>
+<div><img src="images/placeholder.png" width='100%'></div>
 <div><p class="text-center">The annular solar eclipse of October 14, 2023</p></div>
 <div><p class="text-center">The total solar eclipse of April 8, 2024</p></div>
 </div>
@@ -147,14 +147,13 @@ Imbed an eclipse video on your community's official tourism or business developm
 <br>
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 0.1fr 0.1fr; gap: 15px 15px;">
-<div><img src="images/table.jpg"></div>
-<div><img src="images/table.jpg"></div>
+<div><img src="images/placeholder.png" width='100%'></div>
+<div><img src="images/placeholder.png" width='100%'></div>
 <div><p class="text-center">Select a video from our table of city names</p></div>
 <div><p class="text-center">Select a video on the map</p></div>
 </div>
 
 <p class="text-center">Visit our YouTube channels:</p>
-
 
 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 0.1fr; gap: 15px 15px;">
 <div><p class="text-center">In English</p></div>
@@ -164,7 +163,9 @@ Imbed an eclipse video on your community's official tourism or business developm
 
 <p class="text-center">(and be sure to subscribe!)</p>
 
-
+<p class="text-center">
+	<img src="images/2024SimulatorImage_web.jpg" width='500'>
+	</p>
 <p class="text-center">Use the eclipse2024.org eclipse simulator to see the eclipse from any location</p>
 
 
@@ -196,63 +197,6 @@ Imbed an eclipse video on your community's official tourism or business developm
 <script type="text/javascript" src="libs/lobibox/js/messageboxes.min.js"  ></script>
 <script type="text/javascript" src="libs/lobibox/js/notifications.min.js"  ></script>
 <script type="text/javascript" src="js/jquery.datetimepicker.full.min.js"  ></script>
-<script>
-$(document).ready(function() 
-{
-	$(".filter_tables").click(function(e){
-		e.preventDefault();
-		const url = new URL(location.href);
-		url.searchParams.set('filter', $(this).attr('data'));
-		window.location = url;
-	});
-
-    $('#city_table').DataTable(
-	{
-		ordering: true,
-		"pageLength": 25,		
-		language:
-			{
-				"search": "Search for a city / state / country:",
-				"lengthMenu": "Display _MENU_ Cities",
-				"info": "Showing _START_ to _END_ of _TOTAL_ entries",
-				"zeroRecords":"No matching records found",
-				"infoFiltered":   "(filtered from _MAX_ total entries)",
-				paginate: 
-				{
-					previous: '‹',
-					next:     '›'
-				},
-				aria: 
-				{
-					paginate: 
-					{
-						previous: 'Previous',
-						next:     'Next'
-					}
-				}
-			},
-		columnDefs: [
-			
-			{ targets: [0], sortable: true},
-			{ targets: [0,1], searchable: true,sortable: true},
-			{ targets: [2,3], searchable: false,sortable: false},
-			// { targets: [1,2,3], sortable: true,sortable: true}
-			
-		]	
-	});
-	
-	$(document).delegate('[id=timezone]','change',function (event) 
-	{		
-		event.preventDefault();
-		var selected_timezone = $(this).val();
-		// alert (selected_timezone);
-		
-		$("#timezone_selector").submit();
-			
-	});
-});
-</script>
-
 
 </body>
 
