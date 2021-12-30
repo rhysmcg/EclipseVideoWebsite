@@ -1,0 +1,309 @@
+/*header styles*/
+@import url(/css/font.css);
+* {
+	box-sizing: border-box
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Open Sans', sans-serif;
+	color: #000
+}
+
+h1 {
+	font-size: 1.4rem
+}
+
+h2 {
+	font-size: 1.2rem
+}
+
+h3 {
+	font-size: 1rem
+}
+
+h4 {
+	font-size: .8rem
+}
+
+.disabled {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: #ff0;
+	opacity: .3
+}
+
+.disabled a {
+	color: gray;
+	pointer-events: none
+}
+
+
+
+.header_icons,
+.header_icons img {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding-left: .1rem;
+	border-radius: 50%
+}
+
+
+
+#main_header {
+	font-family: 'Open Sans',sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	width: 100%;
+	max-width: 1366px !important;	
+	background-color: #231f20;
+	background-image: url(/images/header_top_background_org.jpg);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-origin: border-box;
+	background-size: 30%;
+	/* background-size: contain; */
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;	
+	line-height: 1rem;	
+	
+}
+
+.header_caption {
+	
+	font-family: 'Open Sans', sans-serif
+	text-align:center;
+	font-size: .85rem;
+}
+
+.header_second_caption {	
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	margin-top: .5rem !important;
+	padding: 0;
+	line-height: 1.5rem;
+	font-size: 1rem;
+	text-align:center;
+}
+
+.eclipse_counter {
+	margin: 0;	
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;	
+	font-size:0.8rem !important;
+}
+
+.eclipse_counter .numbers {
+	
+	font-family: 'Open Sans', sans-serif
+	font-size: .9rem;
+	font-weight: 700;
+}
+
+.disclaimer {
+	font-family: 'Open Sans', sans-serif;
+	font-size: .6rem;
+	color: #fff;
+}
+
+#news_header {
+	width: 100%;
+	max-width: 1366px !important;
+	background-color: #f3bc33;
+	min-height: 2.8rem;
+	max-height: 2.8rem;
+	padding: .3rem;
+	font-family: 'Open Sans', sans-serif;
+	/* font-size: 1rem; */
+	font-size: .8rem;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ticker1 ul,
+.ticker2 ul {
+	list-style: none;
+	padding: 0;
+	height: auto
+}
+
+
+
+.news_background {
+	background-color: #f3bc33
+}
+
+
+
+.language_links a {
+	font-size: .6rem;
+	color: #fff;
+	font-weight: thin
+}
+
+
+#footer {
+	background-color: #000;
+	text-align: center;
+	color: #fff;
+	padding: 2rem;
+	font-size: .8rem;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	max-width: 1366px !important;	
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#footer p a {
+	color: #fff
+}
+
+#footer h1 {
+	font-size: 1.2rem;
+	color: red !important;
+	text-align: center;
+	margin-bottom: 1rem;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+
+.back-to-top.show {
+	opacity: 1
+}
+
+
+
+a.back-to-top:hover {
+	color: #fff;
+	text-decoration: none
+}
+
+
+@media (max-width:2566px),
+@media (max-width:1366px) {
+	.icons {
+		flex-direction: row
+	}
+	.columns {
+		flex-grow: 1;
+		flex-basis: 19.5%;
+		max-width: 19.5%
+	}
+	.header_second_caption {
+		margin-top: -2.5rem;
+		padding: 0
+	}
+	.rwd-break {
+		display: none
+	}
+	.desktop-break {
+		display: block
+	}
+	.disclaimer {
+		margin-left: 3rem;
+		margin-right: 3rem
+	}
+	.disclaimer a {
+		text-decoration: underline;
+		color: #fff
+	}
+	.title_footer {
+		margin: 4rem 10rem;
+		font-size: 1.2rem;
+		line-height: .7
+	}
+}
+
+@media (max-width:1280px) {
+	#main_header {
+		background-size: 400px
+	}
+	.icons {
+		flex-direction: row
+	}
+	.columns {
+		flex-grow: 1;
+		flex-basis: 24%;
+		max-width: 24%
+	}
+	.header_second_caption {
+		margin-top: -2.5rem;
+		padding: 0
+	}
+	.rwd-break {
+		display: none
+	}
+	.desktop-break {
+		display: block
+	}
+	.disclaimer {
+		margin-left: 3rem;
+		margin-right: 3rem
+	}
+	.disclaimer a {
+		text-decoration: underline;
+		color: #fff
+	}
+	.title_footer {
+		margin: 4rem 10rem;
+		font-size: 1.2rem;
+		line-height: .7
+	}
+}
+
+@media (max-width:1024px) {
+	#main_header {
+		background-size: 350px
+	}
+	.header_caption {
+		font-size: .8rem;
+		font-family: 'Open Sans', sans-serif
+	}
+	.icons {
+		flex-direction: row
+	}
+	.columns {
+		flex-grow: 1;
+		flex-basis: 29%;
+		max-width: 29%
+	}
+	.header_second_caption {
+		margin-top: -2.5rem
+	}
+	.rwd-break {
+		display: none
+	}
+	.desktop-break {
+		display: block
+	}
+	.disclaimer {
+		margin-left: 3rem;
+		margin-right: 3rem
+	}
+	.title_footer {
+		margin: 4rem 10rem;
+		font-size: 1.2rem;
+		line-height: .7
+	}
+	.search-container form input[type=text] {
+		width: 82%;
+		border: none;
+		font-family: 'Open Sans', sans-serif
+	}
+}
+
+
