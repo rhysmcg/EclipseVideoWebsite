@@ -26,7 +26,49 @@
 <script type="text/javascript">
 var language='en';
 </script>
+
+<!-- Image grids for mobile and desktop -->
+<style>
+
+.imageContainer {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr; gap: 15px 15px;
+grid-template-areas:
+  "img1"
+  "img1desc"
+  "img2"
+  "img2desc";
+}
+
+.img1 {grid-area: img1;}
+.img2 {grid-area: img2;}
+.img1desc {grid-area: img1desc;}
+.img2desc {grid-area: img2desc;}
+
+@media (min-width: 500px) {
+.imageContainer {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 0.1fr 0.1fr; gap: 15px 15px;
+grid-template-areas:
+  "img1  img2"
+  "img1desc img2desc";
+}
+
+.img1 {grid-area: img1;}
+.img2 {grid-area: img2;}
+.img1desc {grid-area: img1desc;}
+.img2desc {grid-area: img2desc;}
+}
+
+
+</style>
+
+
 </head>
+
+
 
 
 
@@ -47,12 +89,17 @@ var language='en';
 <div class="main-content">
 
 <br>
-<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 0.1fr 0.1fr; gap: 15px 15px;">
-<div><p class="text-center"><img src="placeholder.png" width='300'></p></div>
-<div><p class="text-center"><img src="placeholder.png" width='300'></p></div>
-<div><p class="text-center">The annular solar eclipse of October 14, 2023</p></div>
-<div><p class="text-center">The total solar eclipse of April 8, 2024</p></div>
+
+<div class="imageContainer">
+
+	<div class="img1"><p class="text-center"><img src="placeholder.png" width='300'></p></div>
+	<div class="img2"><p class="text-center"><img src="placeholder.png" width='300'></p></div>
+
+	<div class="img1desc"><p class="text-center">The annular solar eclipse of October 14, 2023</p></div>
+	<div class="img2desc"><p class="text-center">The total solar eclipse of April 8, 2024</p></div>
+
 </div>
+
 
 <div class="table_area table-responsive-xs" style="margin-top:10px">
 
@@ -75,12 +122,15 @@ Imbed an eclipse video on your community's official tourism or business developm
 <p class="text-center">What video would you like to watch?</p>
 <br>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 0.1fr 0.1fr; gap: 15px 15px;">
-	<div><p class="text-center"><img src="table.jpg" width='300'></p></div>
-	<div><p class="text-center"><img src="mapimage_2.png" width='300'></p></div>
-	<div><p class="text-center">Select a video from our table of city names</p></div>
-	<div><p class="text-center">Select a video on the map</p></div>
+
+<center>
+<div class="imageContainer">
+	<div class="img1"><img src="table.jpg" width='300'></p></div>
+	<div class="img2"><img src="mapimage_2.png" width='300'></p></div>
+	<div class="img1desc">Select a video from our table of city names</p></div>
+	<div class="img2desc">Select a video on the map</p></div>
 </div>
+</center>
 
 <p class="text-center">Visit our YouTube channels: </p>
 
