@@ -64,17 +64,14 @@ video::-webkit-media-controls-panel {
 
 /* MOBILE MODE */
 .imageContainer {
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr; gap: 15px 15px;
-max-width: 750px;
-margin: 0 auto;
-grid-template-areas:
-  "img1"
-  "img1desc"
-  "img2"
-  "img2desc";
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 0fr; gap: 0px 15px;
+    max-width: 768px;
+    grid-template-areas:
+      "img1  img2"
+      "img1desc img2desc";
+    }
 
 
 .popupAccordion {
@@ -106,15 +103,11 @@ grid-template-areas:
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 0.1fr; gap: 15px 15px;
+    max-width: 768px;
     grid-template-areas:
       "img1  img2"
       "img1desc img2desc";
     }
-
-    .img1 {grid-area: img1;}
-    .img2 {grid-area: img2;}
-    .img1desc {grid-area: img1desc;}
-    .img2desc {grid-area: img2desc;}
 
 
     .popupAccordion {
@@ -141,16 +134,11 @@ grid-template-areas:
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 0.1fr; gap: 15px 15px;
+    max-width: 768px;
     grid-template-areas:
       "img1  img2"
       "img1desc img2desc";
     }
-
-    .img1 {grid-area: img1;}
-    .img2 {grid-area: img2;}
-    .img1desc {grid-area: img1desc;}
-    .img2desc {grid-area: img2desc;}
-
 
     .popupAccordion {
       position: fixed;
@@ -189,8 +177,8 @@ grid-template-areas:
    <h2 class="title"></h2>
 
 	<div class="info-block">
-	<h2 style="text-align: center;color:black;font-weight: 600;font-size: 20px;line-height:25px !important;">We've extracted videos from the <a href="/eclipse-simulator/">eclipse2024.org eclipse simulator</a> for over 2,000 cities in North America!</h2>
-	<h2 style="text-align: center;color:black;font-weight: 600;font-size: 20px;line-height:25px !important;">These will show you exactly what the eclipse will look like, and when it will happen.</h2>
+	<h4 class="text-center fw-bold">We've extracted videos from the <a href="/eclipse-simulator/">eclipse2024.org eclipse simulator</a> for over 2,000 cities in North America!</h2>
+	<h4 class="text-center fw-bold">These will show you exactly what the eclipse will look like, and when it will happen.</h2>
 </div>
 
 
@@ -198,20 +186,20 @@ grid-template-areas:
 <br>
 
 
-
+<center>
 <div class="imageContainer">
 
-	<div class="img1"><p class="text-center"><video controls autoplay muted loop width="350" >
+	<div class="img1"><p class="text-center"><video controls autoplay muted loop width="100%" >
     <source src="annular_sm_fast.mp4" type="video/mp4"></video></p></div>
 
-	<div class="img2"><p class="text-center"><video controls autoplay muted loop width="350">
-    <source src="annular_sm_fast.mp4" type="video/mp4"></video></p></div>
+	<div class="img2"><p class="text-center"><video controls autoplay muted loop width="100%">
+    <source src="total_sm_fast.mp4" type="video/mp4"></video></p></div>
 
 	<div class="img1desc"><p class="text-center">The annular solar eclipse of October 14, 2023</p></div>
 	<div class="img2desc"><p class="text-center">The total solar eclipse of April 8, 2024</p></div>
 
 </div>
-
+</center>
 
 
 <div style="margin-top:10px">
@@ -222,7 +210,7 @@ grid-template-areas:
 
 
 
-
+<center>
   <div class="imageContainer">
     <div class="img1"><p class="text-center"><a href="/simvideos/table.html"><img src="table.jpg" width='300'></p></a></div>
     <div class="img2"><p class="text-center"><a href="/simvideos/2024vidmap/index.html"><img src="mapimage_2.png" width='300'></p></a></div>
@@ -240,7 +228,7 @@ grid-template-areas:
   <div class="img1desc"><p class="text-center"><a href="/2023eclipse/simvideos/table.html"><i>Select a 2023 eclipse video from our table of city names</i></a></p></div>
   <div class="img2desc"><p class="text-center"><a href="/simvideos/2023vidmap/index.html"><i>Select a 2023 eclipse video on the map</i></a></p></div>
 </div>
-
+</center>
 <hr>
 <h2 class="title">Use the Eclipse Simulator to customize your view of the eclipse:</h2>
 
@@ -274,6 +262,8 @@ grid-template-areas:
 </div> 
 
 
+
+<!-- This is the Chatbox Window. Check the Button under H2 to change the tab Text-->
 <div class="accordion " id="chatBoxInfo">
   <div class="accordion-item popupAccordion">
 
@@ -284,6 +274,7 @@ grid-template-areas:
       
     </h2>
 
+<!-- This is the Chatbox Body. The Paragraphs and lists are used below -->
     <div id="chatboxBody" class="accordion-collapse collapse" aria-labelledby="chatboxHeader" data-bs-parent="#chatBoxInfo">
       
       <div class="accordion-body ">
@@ -318,40 +309,8 @@ grid-template-areas:
 
 
 
-
-
+<!-- This script allows clickable elements within bootstrap such as the chatbox to function. -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
-
-<script>
-/*
-var Collapsible = document.getElementById('chatBoxInfo')
-var chatboxButton = document.getElementById('chatboxButton')
-
-
-
-// accordion-button.text-center::after
-
-Collapsible.addEventListener('shown.bs.collapse', function () {
-  chatboxButton.className = "accordion-button collapsed text-center  popupButton downArrow"
-})
-
-
-Collapsible.addEventListener('hidden.bs.collapse', function () {
-  chatboxButton.className += "accordion-button text-center collapsed popupButton upArrow"
-
-
-
-})
-
-// accordion-button text-center collapsed popupButton downArrowaccordion-button text-center collapsed popupButton upArrow
-
-// accordion-button text-center collapsed popupButton downArrowaccordion-button text-center collapsed popupButton upArrow
-*/
-</script>
-
-
 
 
 </body>
