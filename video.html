@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Eclipse Simulation Videos for the total solar eclipse of April 8, 2024 and the annular solar eclipse of October 14, 2023</title>
-<meta name="keywords" content="eclipse 2024, 2024 eclipse, 2023 eclipse, eclipse, solar eclipse, total solar eclipse, annular solar eclipse, 2024 solar eclipse, 2024 total solar eclipse">
+<title>Simulator Videos for the Great North American Eclipse of April 8, 2024 | eclipse2024.org</title>
+<meta name="keywords" content="eclipse 2024, 2024 eclipse, eclipse, solar eclipse, total solar eclipse, 2024 solar eclipse, 2024 total solar eclipse">
 <meta name="description" content="Information about the total solar eclipse in North America on April 8 2024!">	
 
 <link rel="icon" href="favicon.png" type="image/x-icon">
@@ -26,49 +26,14 @@
 <script type="text/javascript">
 var language='en';
 </script>
+
+<!-- Image grids for mobile and desktop -->
 <style>
 
-/* Hides the black shadow in the video at the bottom blocking the city */
-video::-webkit-media-controls-panel {
-  background-image: linear-gradient(transparent, transparent) !important;
-}
-
-/* Sets chatbox arrow back to normal */
-.upArrow::after {
-  -webkit-transform:rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-/* Sets chatbox arrow back to normal */
-.downArrow::after {
-  -webkit-transform:rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-
-.accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  transform: rotate(0deg)
-}
-
-
-
-
-
-
-/* MOBILE MODE */
 .imageContainer {
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr; gap: 15px 15px;
-max-width: 750px;
-margin: 0 auto;
 grid-template-areas:
   "img1"
   "img1desc"
@@ -76,136 +41,59 @@ grid-template-areas:
   "img2desc";
 }
 
-
-.popupAccordion {
-  position: fixed;
-  bottom: 0;
-  width: 80%;
-  font-size: 10px;
-  right: 0;
-}
-
-.popupButton {
-  font-size: 10px;
-  font-weight: bold;
-
-}
-
-
 .img1 {grid-area: img1;}
 .img2 {grid-area: img2;}
 .img1desc {grid-area: img1desc;}
 .img2desc {grid-area: img2desc;}
 
-
-
-
-/* TABLET MODE */
-@media (min-width: 576px) {
-  .imageContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr; gap: 15px 15px;
-    grid-template-areas:
-      "img1  img2"
-      "img1desc img2desc";
-    }
-
-    .img1 {grid-area: img1;}
-    .img2 {grid-area: img2;}
-    .img1desc {grid-area: img1desc;}
-    .img2desc {grid-area: img2desc;}
-
-
-    .popupAccordion {
-  position: fixed;
-  bottom: 0;
-  width: 30%;
-  font-size: 10px;
-  right: 0;
+@media (min-width: 500px) {
+.imageContainer {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 0.1fr 0.1fr; gap: 15px 15px;
+grid-template-areas:
+  "img1  img2"
+  "img1desc img2desc";
 }
 
-.popupButton {
-  font-size: 10px;
-  font-weight: bold;
-
+.img1 {grid-area: img1;}
+.img2 {grid-area: img2;}
+.img1desc {grid-area: img1desc;}
+.img2desc {grid-area: img2desc;}
 }
-
-}
-
-
-
-/* DESKTOP MODE */
-@media (min-width: 992px) {
-  .imageContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr; gap: 15px 15px;
-    grid-template-areas:
-      "img1  img2"
-      "img1desc img2desc";
-    }
-
-    .img1 {grid-area: img1;}
-    .img2 {grid-area: img2;}
-    .img1desc {grid-area: img1desc;}
-    .img2desc {grid-area: img2desc;}
-
-
-    .popupAccordion {
-      position: fixed;
-      bottom: 0;
-      width: 20vw;
-      font-size: 0.8vw; 
-      right: 0;
-    }
-
-    .popupButton {
-      font-size: 0.8vw;
-      font-weight: bold;
-
-    }
-}
-
-
-
-
-
-
-
-
-
 
 
 </style>
 
+
 </head>
+
+
+
+
 
 <body>
 
 <div class="container ">
-
+	<div class="content-body">
    <h1 class="title">Video simulations for the 2024 total solar eclipse and the 2023 annular solar eclipse</h1>
    <h2 class="title"></h2>
 
 	<div class="info-block">
-	<h2 style="text-align: center;color:black;font-weight: 600;font-size: 20px;line-height:25px !important;">We've extracted videos from the <a href="/eclipse-simulator/">eclipse2024.org eclipse simulator</a> for over 2,000 cities in North America!</h2>
+	<h2 style="text-align: center;color:black;font-weight: 600;font-size: 20px;line-height:25px !important;">We've extracted videos from the eclipse2024.org eclipse simulator for over 2,000 cities in North America!</h2>
 	<h2 style="text-align: center;color:black;font-weight: 600;font-size: 20px;line-height:25px !important;">These will show you exactly what the eclipse will look like, and when it will happen.</h2>
+
+<hr>
 </div>
 
-
+<div class="main-content">
 
 <br>
 
-
-
 <div class="imageContainer">
 
-	<div class="img1"><p class="text-center"><video controls autoplay muted loop width="350" >
-    <source src="annular_sm_fast.mp4" type="video/mp4"></video></p></div>
-
-	<div class="img2"><p class="text-center"><video controls autoplay muted loop width="350">
-    <source src="annular_sm_fast.mp4" type="video/mp4"></video></p></div>
+	<div class="img1"><p class="text-center"><img src="placeholder.png" width='300'></p></div>
+	<div class="img2"><p class="text-center"><img src="placeholder.png" width='300'></p></div>
 
 	<div class="img1desc"><p class="text-center">The annular solar eclipse of October 14, 2023</p></div>
 	<div class="img2desc"><p class="text-center">The total solar eclipse of April 8, 2024</p></div>
@@ -213,145 +101,64 @@ grid-template-areas:
 </div>
 
 
+<div class="table_area table-responsive-xs" style="margin-top:10px">
 
-<div style="margin-top:10px">
-<hr>
-
-<h2 class="title">Select an eclipse video to watch:</h2>
-<br>
-
-
-
-
-  <div class="imageContainer">
-    <div class="img1"><p class="text-center"><a href="/simvideos/table.html"><img src="table.jpg" width='300'></p></a></div>
-    <div class="img2"><p class="text-center"><a href="/simvideos/2024vidmap/index.html"><img src="mapimage_2.png" width='300'></p></a></div>
-    <div class="img1desc"><p class="text-center"><a href="/simvideos/table.html"><i>Select a 2024 eclipse video from our table of city names</i></a></p></div>
-    <div class="img2desc"><p class="text-center"><a href="/simvideos/table.html"><i>Select a 2024 eclipse video from our table of city names</i></a></p></div>
-  </div>
-
-
+<h2 class="title">Teachers / Public Officials / members of the media</h2>
+<p class="text-left">We've also made it possible for you to download a streamlined video of the eclipse sequence for official promotional, media or educational use.</p>
 
 <br>
 
+<p class="text-left">Use one or more eclipse videos in a presentation for your students, faculty or administration.
+Use an eclipse video in your news broadcast, to show your viewers what they can expect to see on eclipse day.
+Imbed an eclipse video on your community's official tourism or business development page, to show your visitors and community members what they can expect to see on eclipse day.
+</p>
+
+<br>
+
+<p class="text-left">(Before you download, be sure to read our Terms and Conditions for Use of the downloaded simulator videos. Using the videos in any way constitues your agreement to these Terms and Conditions for Use.)</p>
+
+<br>
+
+<p class="text-center">What video would you like to watch?</p>
+<br>
+
+
+<center>
 <div class="imageContainer">
-  <div class="img1"><p class="text-center"><a href="/2023eclipse/simvideos/table.html"><img src="table.jpg" width='300'></p></a></div>
-  <div class="img2"><p class="text-center"><a href="/simvideos/2023vidmap/index.html"><img src="2023map.png" width='300'></p></a></div>
-  <div class="img1desc"><p class="text-center"><a href="/2023eclipse/simvideos/table.html"><i>Select a 2023 eclipse video from our table of city names</i></a></p></div>
-  <div class="img2desc"><p class="text-center"><a href="/simvideos/2023vidmap/index.html"><i>Select a 2023 eclipse video on the map</i></a></p></div>
+	<div class="img1"><img src="table.jpg" width='300'></p></div>
+	<div class="img2"><img src="mapimage_2.png" width='300'></p></div>
+	<div class="img1desc">Select a video from our table of city names</p></div>
+	<div class="img2desc">Select a video on the map</p></div>
 </div>
+</center>
 
-<hr>
-<h2 class="title">Use the Eclipse Simulator to customize your view of the eclipse:</h2>
+<p class="text-center">Visit our YouTube channels: </p>
 
-<p class="text-center"><i>Use the <a href="/eclipse-simulator/">eclipse2024.org eclipse simulator</a> to see the eclipse from any location you choose.</i></p>
-<p class="text-center"><a href="/eclipse-simulator/"><img src="sim_tot_web.png" alt="The Eclipse2024.org eclipse simulator" width='500'></a>
-<br><small><i>(If this is your first visit, you’ll want to open the <a href="/eclipse-simulator/2024/instructions-for-use.html">Eclipse2024.org Eclipse Simulator Instruction page</a> first!)</i></small></p>
-<hr>
-<h2 class="title">Visit our YouTube channels:</h2>
-<p class="text-center"><a href="https://www.youtube.com/channel/UCeh8wjSZoPajyNbcG5NzBQA" target="_blank"><img src="2024SimulatorImage_web.jpg" alt="The eclipse2024.org YouTube channels" width='500'></a></p>
-<br>
 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 0.1fr; gap: 15px 15px;">
-	<div><p class="text-center"><a href="https://www.youtube.com/channel/UCeh8wjSZoPajyNbcG5NzBQA" target="_blank"><i>In English:</i></a></p>
-		<p class="text-center"><a href="https://www.youtube.com/channel/UCeh8wjSZoPajyNbcG5NzBQA" target="_blank"><img src="YT.jpg" width='150'></a></p>
+	<div><p class="text-center">In English</p>
+		<p class="text-center"><img src="placeholder.png" width='150'></p>
 	</div>
-	<div><p class="text-center"><i>en español:</i></p>
-		<p class="text-center"><img src="YTinactive.jpg" width='150'></p>
+	<div><p class="text-center">en espanol</p>
+		<p class="text-center"><img src="placeholder.png" width='150'></p>
 	</div>
-	<div><p class="text-center"><i>en français :</i></p>
-		<p class="text-center"><img src="YTinactive.jpg" width='150'></p>
+	<div><p class="text-center">en francais</p>
+		<p class="text-center"><img src="placeholder.png" width='150'></p>
 	</div>
 </div>
 
-<p class="text-center">(and be sure to subscribe!)</p><br>
-<hr>
-<h2 class="title">Eclipse2024.org wishes everyone Clear Skies on eclipse day!</h2>
+<p class="text-center">(and be sure to subscribe!)</p>
+
+<p class="text-center"><img src="2024SimulatorImage_web.jpg" width='500'></p>
+<p class="text-center">Use the eclipse2024.org eclipse simulator to see the eclipse from any location</p>
+
+
+		
 </div>	
 <br><br>		
 		
 </div>
 </div>
 </div> 
-
-
-<div class="accordion " id="chatBoxInfo">
-  <div class="accordion-item popupAccordion">
-
-    <h2 class="accordion-header" id="chatboxHeader">
-      <button id="chatboxButton" class="accordion-button text-center collapsed popupButton upArrow" type="button" data-bs-toggle="collapse" data-bs-target="#chatboxBody" aria-expanded="true" aria-controls="chatboxBody">
-        Special Notice: <br>Teachers | Public Officials | Members of the Media
-      </button>
-      
-    </h2>
-
-    <div id="chatboxBody" class="accordion-collapse collapse" aria-labelledby="chatboxHeader" data-bs-parent="#chatBoxInfo">
-      
-      <div class="accordion-body ">
-        <section>
-          <main>
-            <div>
-
-              <p class="text-left">We've also made it possible for you to download a streamlined video of the eclipse sequence for official promotional, media or educational use! All we ask is that you provide credit and a link to <a href="https://www.eclipse2024.org" target="_blank">eclipse2024.org</a>.</p>
-        
-        
-              <p class="text-left">
-              <ul>
-                <li>Use one or more eclipse videos in a presentation for your students, faculty or administration.</li>
-                <li>Use an eclipse video in your news broadcast, to show your viewers what they can expect to see on eclipse day.</li>
-                <li>Imbed an eclipse video on your community's official tourism or business development page, to show your visitors and community members what they can expect to see on eclipse day.</li>
-              </ul>
-              </p>
-              <br>
-              <p class="text-left">You'll see the links to these special videos in the table selection tools listed below.</p>
-        
-              <p class="text-left"><small><i>(Before you download, be sure to read our <a href="https://www.eclipse2024.org/simvideos/tandc.html" target="_blank">Terms and Conditions for Use of the downloaded simulator videos</a>. Using the videos in any way constitutes your agreement to these Terms and Conditions for Use.)</i></small></p>
-            </div>
-          </main>
-        </section>
-      </div>
-    </div>
-
-
-  </div>
-  </div>
-</div>
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
-
-<script>
-/*
-var Collapsible = document.getElementById('chatBoxInfo')
-var chatboxButton = document.getElementById('chatboxButton')
-
-
-
-// accordion-button.text-center::after
-
-Collapsible.addEventListener('shown.bs.collapse', function () {
-  chatboxButton.className = "accordion-button collapsed text-center  popupButton downArrow"
-})
-
-
-Collapsible.addEventListener('hidden.bs.collapse', function () {
-  chatboxButton.className += "accordion-button text-center collapsed popupButton upArrow"
-
-
-
-})
-
-// accordion-button text-center collapsed popupButton downArrowaccordion-button text-center collapsed popupButton upArrow
-
-// accordion-button text-center collapsed popupButton downArrowaccordion-button text-center collapsed popupButton upArrow
-*/
-</script>
-
-
 
 
 </body>
